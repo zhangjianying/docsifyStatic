@@ -1,0 +1,10 @@
+﻿开发环境:
+先安装
+npm i docsify-cli -g
+
+安装完以后 回到上一层目录 执行
+docsify serve doc
+
+生产环境:
+可以使用Express
+也可以直接使用http-server 启动. 整个已经是静态网站

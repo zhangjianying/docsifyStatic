@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      auto2top: true, //当路线改变时，滚动到屏幕的顶部。
+      alias: {
+        '/.*/_navbar.md': '/_navbar.md',
+      },
+      //加载自定义导航栏
+      // notFoundPage: '_404.html',
+      auto2top: true,
+      executeScript: true,
+      loadNavbar: false,
+      loadSidebar: true,
+      coverpage: false,
+      name: 'XXXXXX框架说明',
+      subMaxLevel: 3,
+      mergeNavbar: true,
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      showLevel: true,
+      noEmoji: true,
+      tocLevel: 6,
+      //搜索配置项
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or 'auto'
+        placeholder: '搜索',
+        noData: '找不到结果',
+        // 搜索标题的最大程级, 1 - 6
+        depth: 4
+      },
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+      }
+    }
+  </script>
+  <script src="./lib/docsify.min.js"></script>
+  <script src="./lib/plugins/search.min.js"></script>
+  <script src="./lib/plugins/zoom-image.min.js"></script>
+  <script src="./lib/plugins/external-script.min.js"></script>
+  <script src="./lib/plugins/emoji.min.js"></script>
+
+  <!-- <script src="./lib/prism/prism-java.js"></script> -->
+  prism-yaml.min.js
+  <!-- <script src="./lib/prism/prism-core.min.js"></script> -->
+  <script src="./lib/prism/prism-java.min.js"></script>
+  <script src="./lib/prism/prism-css.js"></script>
+  <script src="./lib/prism/prism-css-extras.min.js"></script>
+  <script src="./lib/prism/prism-javascript.min.js"></script>
+  <script src="./lib/prism/prism-bash.min.js"></script>
+  <script src="./lib/prism/prism-dart.min.js"></script>
+  <script src="./lib/prism/prism-http.min.js"></script>
+  <script src="./lib/prism/prism-sql.min.js"></script>
+  <script src="./lib/prism/prism-yaml.min.js"></script>
+</body>
+</html>
